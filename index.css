@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: red;
+    
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(105, 103, 103);
+}
+.user-panel{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.fa-bell {
+    font-size: 1.5rem;
+}
+.user-panel img{
+    border-radius: 100%;
+    max-width: 2rem;
+}
+.search-container {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.search-container i{
+    padding: 0.5rem;
+}
+.user-panel input{
+    border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1
+}
