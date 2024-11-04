@@ -8,7 +8,6 @@ header{
 }
 header h1{
     color: red;
-    
 }
 header nav{
     display: flex;
@@ -18,6 +17,7 @@ header nav{
 header nav a{
     text-decoration: none;
     color: rgb(105, 103, 103);
+    margin: 1rem;
 }
 .user-panel{
     display: flex;
@@ -35,7 +35,7 @@ header nav a{
     display: inline-flex;
     flex: 1 1 300px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgb(173, 172, 172);
     border-radius: 5px;
     overflow: hidden;
 
@@ -47,4 +47,44 @@ header nav a{
     border: 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1
+}
+.hero{
+    border: 1px solid black;
+}
+.movie-info{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 0;
+    margin: 5rem;
+    
+}
+.movie-info h1{
+font-family: "Playfair Display", serif;
+}
+
+.age{
+    border: 1px solid black;
+    border-radius: .2rem;
+    padding: .2rem;
+    margin: 1rem;
+}
+.hours{
+    font-weight: bold;
+}
+.movie-info p{
+    max-width: 50%;
+    
+}
+button{
+    background: red;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    padding-right: 2rem;
+}
+p span{
+    color: red;
+    font-weight: bold;
 }

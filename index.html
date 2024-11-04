@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4a1654e456.js" crossorigin="anonymous"></script>
         <title>WitFlix</title>
     </head>
@@ -17,15 +20,35 @@
                 <a href="">Topic4</a>
             </nav>
             <div class="user-panel">
-                <div class="container">
-                <input class="searchBox" type="text" placeholder="İçerik, kişi, tür">
-                <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                <div class="search-container">
+                <input type="text" placeholder=" İçerik, kişi, tür">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <i class="fa-solid fa-bell"></i>
                 <img src="https://picsum.photos/100" alt="">
             </div>
         </header>
-        <main class="hero"></main>
+        <main class="hero">
+            <div class="movie-info">
+                <h2>Movie Name</h2>
+                <div class="movie-rating">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star"></i> 7.3 IMDB</span>
+                    <span class="age">+16</span>
+                    <span class="hours">2 hr 21 min</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas qui repellendus voluptates doloribus nemo fuga vero deserunt officia ea, aut laborum, reiciendis totam voluptatem est! Consectetur asperiores delectus id voluptate.</p>
+                <div>
+                    <p><span>Starring: </span>Lorem ipsum, Lorem ipsum, Lorem ipsum</p>
+                    <p><span>Genre: </span>Lorem, Ipsum, Color</p>
+                    <p><span>Tags: </span>Lorem, Ipsum, Color</p>
+                </div>
+                <button class="fa-solid fa-play"> Play Now</button>
+            </div>
+        </main>
         <section class="section.suggestion"></section>
         <footer></footer>
     </body>
