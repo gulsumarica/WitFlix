@@ -55,12 +55,13 @@ header nav a{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: 0;
-    margin: 5rem;
+    margin: 5rem 5rem 5rem 1rem ;
+    
     
 }
-.movie-info h1{
+.movie-info h2{
 font-family: "Playfair Display", serif;
+text-transform: uppercase;
 }
 
 .age{
@@ -83,8 +84,45 @@ button{
     border: none;
     border-radius: .5rem;
     padding-right: 2rem;
+    
 }
 p span{
     color: red;
     font-weight: bold;
+    
+}
+.populer-movies{
+    
+    
+}
+.content{
+    
+
+}
+.populer-movies h3{
+    font-size: 10px;
+}
+.populer-movies p{
+    font-size: 10px;
+    
+}
+.populer-list-total{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 1px solid black;
+}
+.populer-movie-list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem;
+    min-width: 25%
+    
+}
+.populer-movie-list button{
+    font-size: 10px;
+    margin: 2rem;
+    text-align: center;
+    max-width: 30%;
 }
