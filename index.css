@@ -224,10 +224,16 @@ p span{
 /*---mobile----*/
 
 @media(max-width:500px){
-    .search-container, .user-panel img, .header nav a{
+    .search-container, .user-panel img, .active{
         display: none;
     }
-    .user-panel .fa-bars{
+    .checkbtn{
+        display: block;
+    }
+    .user-panel .fa-bars:hover{
+        color: red;
+    }
+    .fa-bars:checked ~ .active{
         display: block;
     }
     .hero{
