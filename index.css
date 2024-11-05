@@ -8,6 +8,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    
 }
 header h1{
     color: red;
@@ -20,7 +21,7 @@ header nav{
 header nav a{
     text-decoration: none;
     color: rgb(105, 103, 103);
-    margin: 1rem;
+    margin: .5rem;
 }
 .user-panel{
     display: flex;
@@ -125,15 +126,17 @@ p span{
 .populer-list-total{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
+    overflow: scroll;
+
 }
 .populer-movie-list{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 1px solid black;
-    padding: 1rem;
-    width: 100%;
+    padding: 1%;
+    min-width: 15rem
+    
 }
 .populer-movie-rating{
     margin-left: -1rem;
@@ -165,15 +168,15 @@ p span{
 .recommend-list-total{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
+    overflow: scroll;
 }
 .recommend-movie-list{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 1px solid black;
-    padding: 1rem;
-    width: 100%;
+    padding: 1%;
+    min-width: 15rem
 }
 .recommend-movie-rating{
     margin-left: -1rem;
@@ -239,8 +242,11 @@ p span{
         width: 100%;
         height: 100%;
     }
-    .movie-rating{
-        width: 100%;
-        height: 100%;
-    }
+   .populer-movies{
+    overflow: scroll;
+    width: 100%;
+   }
+   .recommend-movies{
+    overflow: scroll;
+   }
 }
