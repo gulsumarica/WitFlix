@@ -2,6 +2,9 @@ body{
     padding: 0;
     margin: 1rem;
 }
+
+/*-----header----*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -12,7 +15,7 @@ header h1{
 header nav{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    
 }
 header nav a{
     text-decoration: none;
@@ -23,6 +26,9 @@ header nav a{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+.user-panel .fa-bars{
+    display: none;
 }
 .fa-bell {
     font-size: 1.5rem;
@@ -45,25 +51,33 @@ header nav a{
 }
 .user-panel input{
     border: 0;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  flex: 1
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    font-size: smaller;
 }
+
+/*-----main------*/
+
+
 .hero{
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+   
 }
 .movie-info{
+    max-width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 5rem 5rem 5rem 1rem ;
-    
-    
+    margin: 1rem;
 }
 .movie-info h2{
 font-family: "Playfair Display", serif;
 text-transform: uppercase;
+width:10rem;
 }
-
 .age{
     border: 1px solid black;
     border-radius: .2rem;
@@ -84,6 +98,7 @@ button{
     border: none;
     border-radius: .5rem;
     padding-right: 2rem;
+    size: 1rem;
     
 }
 p span{
@@ -91,38 +106,141 @@ p span{
     font-weight: bold;
     
 }
-.populer-movies{
-    
-    
-}
-.content{
-    
+
+/*-----populer------*/
+
+.populer-content{
+    display: flex;
+    justify-content: space-between;
 
 }
 .populer-movies h3{
     font-size: 10px;
 }
-.populer-movies p{
+.populer-movies a{
     font-size: 10px;
-    
+    text-decoration: none;
+    color: red;
 }
 .populer-list-total{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    border: 1px solid black;
 }
 .populer-movie-list{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
     padding: 1rem;
-    min-width: 25%
-    
+    width: 100%;
+}
+.populer-movie-rating{
+    margin-left: -1rem;
+
 }
 .populer-movie-list button{
+    font-size: .5rem;
+    margin: 1rem 0;
+    display: flex;
+    width: 7rem;
+   
+}
+
+/*recommend*/
+
+.recommend-content{
+    display: flex;
+    justify-content: space-between;
+}
+.recommend-movies h3{
     font-size: 10px;
-    margin: 2rem;
+}
+.recommend-movies a{
+    font-size: 10px;
+    text-decoration: none;
+    color: red;
+    
+}
+.recommend-list-total{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.recommend-movie-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 100%;
+}
+.recommend-movie-rating{
+    margin-left: -1rem;
+
+}
+.recommend-movie-list button{
+    font-size: .5rem;
+    margin: 1rem 0;
+    display: flex;
+    width: 7rem;
+   
+}
+/*-----footer-----*/
+.footer-div{
+    flex-direction: row;
+}
+
+.footer-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: 2rem 0;
+}
+.footer-navbar a{
+    text-decoration: none;
+    color: rgb(98, 97, 97);
+    margin-bottom: -1rem;
+}
+.footer-navbar a:hover{
+    color: red;
+}
+.social-media{
     text-align: center;
-    max-width: 30%;
+    margin: 1rem;
+}
+.social-media h3{
+    font-size: smaller;
+}
+.app{
+    text-align: center;
+    margin: 1rem;
+}
+.app h3{
+    font-size: smaller;
+}
+.app img{
+    width: 10rem;
+}
+/*---mobile----*/
+
+@media(max-width:500px){
+    .search-container, .user-panel img, nav a{
+        display: none;
+    }
+    .user-panel .fa-bars{
+        display: block;
+    }
+    .hero{
+        height: 100%;
+        width:100%;
+    }
+    .movie-info{
+        width: 100%;
+        height: 100%;
+    }
+    .movie-rating{
+        width: 100%;
+        height: 100%;
+    }
 }
