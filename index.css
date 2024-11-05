@@ -8,7 +8,6 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    
 }
 header h1{
     color: red;
@@ -30,9 +29,6 @@ header nav a{
 }
 .user-panel .fa-bars{
     display: none;
-}
-.fa-bell {
-    font-size: 1.5rem;
 }
 .user-panel img{
     border-radius: 100%;
@@ -228,7 +224,7 @@ p span{
 /*---mobile----*/
 
 @media(max-width:500px){
-    .search-container, .user-panel img, nav a{
+    .search-container, .user-panel img, .header nav a{
         display: none;
     }
     .user-panel .fa-bars{
