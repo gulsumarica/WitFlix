@@ -63,7 +63,7 @@ header nav a{
    
 }
 .movie-info{
-    max-width: 100%;
+    max-width: 10%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -91,17 +91,25 @@ width:10rem;
 button{
     background: red;
     color: white;
+    justify-content:space-between;
+    font-size: .5rem;
     padding: 1rem;
     border: none;
     border-radius: .5rem;
     padding-right: 2rem;
-    size: 1rem;
+    
     
 }
 p span{
     color: red;
     font-weight: bold;
     
+}
+
+/*---suggestion h2 uppercase---*/
+
+.suggestion h2{
+    text-transform: uppercase;
 }
 
 /*-----populer------*/
@@ -140,9 +148,10 @@ p span{
 }
 .populer-movie-list button{
     font-size: .5rem;
-    margin: 1rem 0;
+    margin: 1rem 0rem;
     display: flex;
     width: 7rem;
+    
    
 }
 
@@ -227,15 +236,13 @@ p span{
     .search-container, .user-panel img, .active{
         display: none;
     }
-    .checkbtn{
+    .user-panel .fa-bars{
         display: block;
     }
     .user-panel .fa-bars:hover{
         color: red;
     }
-    .fa-bars:checked ~ .active{
-        display: block;
-    }
+    
     .hero{
         height: 100%;
         width:100%;
